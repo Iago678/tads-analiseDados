@@ -95,7 +95,8 @@ def update_graphs(genre_select, plat_select):
         df_filtrado, x='Genre', y='Global_Sales',
         title='Distribuição de Vendas Globais por Gênero',
         labels={'Global_Sales': 'Vendas Globais (US$ milhões)', 'Genre': 'Gênero'},
-        color='Genre'
+        color='Genre',
+        points='all'
     )
     
     line = px.line(
